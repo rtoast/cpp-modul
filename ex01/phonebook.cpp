@@ -9,21 +9,19 @@ void phonebook::filling(){
 	i++;
 	std::cout << "Enter your name:" << std::endl;
 	std::getline(std::cin, variable);
-	data[i].setFirstName(variable);
+	data[i % 8].setFirstName(variable);
 	std::cout << "Enter your last name:" << std::endl;
 	std::getline(std::cin, variable);
-	data[i].setLastName(variable);
+	data[i % 8].setLastName(variable);
 	std::cout << "Enter your nickname:" << std::endl;
 	std::getline(std::cin, variable);
-	data[i].setNickName(variable);
+	data[i % 8].setNickName(variable);
 	std::cout << "Enter your phonenumber:" << std::endl;
 	std::getline(std::cin, variable);
-	data[i].setPhoneNumber(variable);
+	data[i % 8].setPhoneNumber(variable);
 	std::cout << "Enter your Darkest secret:" << std::endl;
 	std::getline(std::cin, variable);
-	data[i].setDarkestSecret(variable);
-	if (i == 7)
-		i = -1;
+	data[i % 8].setDarkestSecret(variable);
 }
 
 string phonebook::SizeOutput(int index, int num){
@@ -83,12 +81,12 @@ void phonebook::scan(){
 	int		index;
 	string	num;
 
-	if (data[0].getFirstName() == "")
+	if (i == -1)
 		std::cout << "No contacts in phonebook" << std::endl;
 	else {
 		index = 0;
 		head();
-		while (index < 8 && data[index].getFirstName() != ""){
+		while (index < i % 8){
 			pinout(index);
 			index++;
 		}
