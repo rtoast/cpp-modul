@@ -1,6 +1,6 @@
-NAME = PhoneBook
+NAME = Fixed
 
-CPP_FILE =	contact.cpp main.cpp phonebook.cpp
+CPP_FILE = main.cpp Fixed.cpp
 O_FILE = $(CPP_FILE:.cpp=.o)
 
 all:

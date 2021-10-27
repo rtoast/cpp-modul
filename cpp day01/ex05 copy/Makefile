@@ -1,6 +1,6 @@
-NAME = megaphone
+NAME = Karen
 
-CPP_FILE =	megaphone.cpp
+CPP_FILE = main.cpp Karen.cpp
 O_FILE = $(CPP_FILE:.cpp=.o)
 
 all:
@@ -21,4 +21,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
