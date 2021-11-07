@@ -8,7 +8,7 @@
 
 class DiamondTrap : public ScavTrap, public FragTrap{
     private:
-        std::string name;
+        std::string _name;
     protected:
 		unsigned int _Hitpoints;
 		unsigned int _EnergyPoints;
