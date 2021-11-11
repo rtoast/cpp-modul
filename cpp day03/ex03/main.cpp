@@ -5,7 +5,6 @@ int main(void){
     DiamondTrap orc("orc");
 	elf.whoAmI();
 	elf.attack("orc");
-	orc = elf;
 	orc.whoAmI();
 	return (0);
 }

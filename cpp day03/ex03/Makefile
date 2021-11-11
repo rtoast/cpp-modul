@@ -9,7 +9,7 @@ all:
 $(NAME): $(O_FILE)
 	c++ $(O_FILE) -o $(NAME)
 
-%.o: %.cpp
+%.o: %.cpp ClapTrap.hpp FragTrap.hpp ScavTrap.hpp DiamondTrap.hpp
 	@c++ -c -Wall -Wextra -Werror -Wshadow -Wno-shadow $< -o $@
 
 clean:
