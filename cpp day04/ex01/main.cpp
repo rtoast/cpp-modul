@@ -1,14 +1,16 @@
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
-#include "WrongAnimal.hpp"
-#include "WrongDog.hpp"
-#include "WrongCat.hpp"
+#include "Brain.hpp"
 
 int main()
 {
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
+    int i = 0;
+    const Animal* j = new Cat();
+    while (i < 50)
+    {
+        j
+    }
+
     delete j;
-    delete i;
 }
