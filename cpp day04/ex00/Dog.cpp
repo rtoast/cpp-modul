@@ -18,6 +18,7 @@ Dog& Dog::operator= (const Dog &equals){
 	std::cout << "Assignation Dog operator called" << std::endl;
 	if (this == &equals)
 		return (*this);
+	this->_Type = equals._Type;
 	return (*this);
 }
 

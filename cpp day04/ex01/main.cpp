@@ -9,7 +9,7 @@ int main()
     const Animal* j = new Cat();
     while (i < 50)
     {
-        j
+        
     }
 
     delete j;

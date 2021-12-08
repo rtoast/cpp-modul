@@ -18,6 +18,7 @@ Cat& Cat::operator= (const Cat &equals){
 	std::cout << "Assignation Cat operator called" << std::endl;
 	if (this == &equals)
 		return (*this);
+	this->_Type = equals._Type;
 	return (*this);
 }
 
