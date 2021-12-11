@@ -1,10 +1,14 @@
-#include "Animal.hpp"
+#include "AAnimal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
 #include "Brain.hpp"
 
+
 int main(){
-    Animal* herd[100];
+
+    // AAnimal planet;
+
+    AAnimal* herd[100];
     for (int i = 0; i < 50; ++i){
         herd[i] = new Cat();
     }
