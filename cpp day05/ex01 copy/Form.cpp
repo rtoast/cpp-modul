@@ -1,6 +1,6 @@
 #include "Form.hpp"
 
-Form::Form(std::string name, int raitingSign, int raitingExecute) : _Name(name), _RaitingSign(raitingSign), _RaitingExecute(raitingSign){
+Form::Form(std::string name, int raitingSign, int raitingExecute) : _Name(name), _RaitingSign(raitingSign), _RaitingExecute(raitingExecute){
 	std::cout << "Default Form constructor called" << std::endl;
 	if (raitingSign < 1)
 		throw GradeTooHighException();
