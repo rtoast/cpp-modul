@@ -1,16 +1,15 @@
 NAME = Iter
 
-CPP_FILE = main.cpp
+CPP_FILE =	main.cpp
 O_FILE = $(CPP_FILE:.cpp=.o)
 
-all:
-	$(MAKE) $(NAME) -j 4
+all: $(NAME)
 
 $(NAME): $(O_FILE)
-	c++ $(O_FILE) -o $(NAME)
+	clang++ -std=c++98 $(O_FILE) -o $(NAME)
 
-%.o: %.cpp ClapTrap.hpp FragTrap.hpp ScavTrap.hpp DiamondTrap.hpp
-	@c++ -c -Wall -Wextra -Werror -Wshadow -Wno-shadow $< -o $@
+%.o: %.cpp
+	@clang++ -std=c++98 -c -Wall -Wextra -Werror $< -o $@
 
 clean:
 	@rm -f $(O_FILE)
