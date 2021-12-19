@@ -13,7 +13,6 @@ $(NAME): $(O_FILE)
 
 clean:
 	@rm -f $(O_FILE)
-	@rm -f *_shrubbery
 
 fclean: clean
 	@rm -f $(NAME)
